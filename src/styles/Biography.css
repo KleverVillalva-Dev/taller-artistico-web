@@ -1,0 +1,56 @@
+.biography-container {
+  padding: 20px 40px; /* Aumenta el espacio lateral */
+  max-width: 100%; /* Ocupa todo el ancho disponible */
+  margin: 0 auto;
+  border-radius: 10px;
+  flex: 1; /* Asegura que el contenedor ocupe el espacio disponible */
+  overflow-y: auto; /* Habilita el scroll si el contenido excede la altura */
+}
+
+.bio-content {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Imagen ocupa menos espacio que el texto */
+  grid-template-rows: auto; /* Permite que las filas se acomoden automáticamente */
+  grid-gap: 20px; /* Espaciado entre la imagen y el texto */
+  align-items: start;
+  padding: 0 20px; /* Solo afecta a esta sección */
+}
+
+@media (max-width: 768px) {
+  .bio-content {
+    grid-template-columns: 1fr; /* Imagen y texto apilados verticalmente */
+    grid-template-rows: auto; /* Asegura que las filas sean dinámicas */
+    grid-gap: 15px; /* Ajusta el espacio entre elementos */
+  }
+
+  .bio-image {
+    margin-bottom: 15px; /* Espacio entre imagen y texto */
+  }
+}
+
+.bio-image {
+  max-width: 300px;
+  justify-self: center; /* Centra la imagen horizontalmente */
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra más oscura para destacar la imagen */
+}
+
+.bio-text {
+  text-align: justify;
+  color: #e5e7eb; /* Blanco suave para el texto */
+  line-height: 1.6;
+  margin-top: 10px; /* Espaciado superior en caso de apilarse */
+}
+
+.bio-title {
+  text-align: center;
+  color: #fbbf24; /* Amarillo brillante */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); /* Resalta el título */
+}

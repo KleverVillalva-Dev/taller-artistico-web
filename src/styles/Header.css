@@ -1,0 +1,64 @@
+.custom-navbar {
+  padding: 20px 0;
+  background-color: #0b3d91; /* Azul oscuro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 60px; /* Aumenta el tamaño */
+  height: auto;
+  margin-right: 15px;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  white-space: nowrap; /* Evita que el texto se corte en otra línea */
+}
+
+.nav-button {
+  background-color: #0b3d91;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+/* Hover de los botones */
+.nav-button:hover {
+  background-color: #1e90ff; /* Azul más claro */
+  color: #ffffff;
+  border-color: #1e90ff;
+  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.5); /* Sombra en hover */
+}
+
+/* Espaciado entre botones */
+.nav-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Contenedor general */
+.navbar-logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  padding: 15px 20px; /* Más espacio alrededor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para un efecto más profesional */
+}
+
+.header {
+  background: linear-gradient(to right, #1e3a8a, #2563eb); /* Degradado azul */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  color: #ffffff;
+}
